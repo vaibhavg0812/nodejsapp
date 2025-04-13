@@ -32,3 +32,5 @@ jobs:
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/nodejs-demo-app
 
+- name: Debug secrets
+  run: echo "Docker username: ${{ secrets.DOCKER_USERNAME}}"
